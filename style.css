@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    position: relative;
+    background-color: #111;
+    color: #fff;
+}
+
+.birth-calc {
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+
+.birth-calc h1 {
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.birth-calc div {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.birth-calc div.birth-control input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 6px;
+}
+
+.birth-calc div.birth-control button {
+    padding: 10px;
+    background-color: green;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+.birth-calc div.birth-control button:hover {
+    background-color: rgb(1, 171, 1);
+}
+
+.birth-calc .birth-result div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.birth-calc .birth-result div span:first-of-type {
+    width: 5rem;
+    color: green;
+    font-weight: 700;
+}
